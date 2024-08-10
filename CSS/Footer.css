@@ -1,0 +1,43 @@
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.footer address {
+    margin: 20px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #1753a4; /* Cambia el color del texto del enlace al pasar el mouse */
+}
+
+.footer .redes {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer .redes a img {
+    transition: filter 0.3s ease;
+}
+
+.footer .redes a:hover img {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(82%) saturate(2372%) hue-rotate(196deg) brightness(95%) contrast(104%);
+}
+
+.footer p {
+    margin: 10px 0;
+}

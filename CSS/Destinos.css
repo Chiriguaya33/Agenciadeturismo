@@ -1,0 +1,110 @@
+body {
+    background-color: #f4f4f4;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.background-video {
+    position: adsolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#destinos {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #4180AB;
+}
+
+.destinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.destino {
+    background-color: #FFFFFF;
+    border: 1px solid #BDD1DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: calc(33% - 30px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destino:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.destino img.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.destino h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.destino p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price, .duration, .weather {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #4180AB;
+}
+
+.price i, .duration i, .weather i {
+    margin-right: 5px;
+    color: #4180AB;
+}
+
+.extras {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #BDD1DE;
+}
+
+@media (max-width: 768px) {
+    .destino {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .destino {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

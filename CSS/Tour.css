@@ -1,0 +1,85 @@
+body {
+    background-color: #f4f4f4;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.cuerpo {
+    padding: 2%;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+.mycontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mycontainer div {
+    width: 480px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mycontainer img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+}
+
+.mycontainer h4 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.price, .duration, .weather {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #4180AB;
+}
+
+.price i, .duration i, .weather i {
+    margin-right: 5px;
+    color: #4180AB;
+}
+
+.mycontainer p {
+    padding: 0 15px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .mycontainer div {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .mycontainer div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

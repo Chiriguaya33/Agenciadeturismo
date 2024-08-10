@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E4EBF0; /* Color de fondo general */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+div.contenido{
+    margin-top: 57px;
+}
+
+/* Encabezado */
+.header {
+    background-color: #4180AB; /* Color azul fuerte */
+    color: #FFFFFF; /* Color blanco para el texto */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #0278c7; /* Color azul para los títulos */
+    margin: 10px 0;
+}
+
+/* Sección */
+section#nosotros {
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Lista de miembros */
+ul.lista {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    background-color: #8AB3CF; /* Fondo azul claro */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #333; /* Texto oscuro */
+    width: 250px;
+    
+}
+
+#nosotros p {
+    text-align: center;
+}

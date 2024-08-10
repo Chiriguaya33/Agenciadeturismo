@@ -1,0 +1,58 @@
+.search-flight-box {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.search-flight-box h2 {
+    margin-bottom: 1rem;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.radio-buttons input {
+    display: none;
+}
+
+.radio-buttons label {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-buttons input:checked+label {
+    background-color: #1753a4;
+}
+
+#flight-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flight-options .input-group {
+    margin-bottom: 1rem;
+}
+
+#flight-options input,
+#flight-options select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
