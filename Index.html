@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cancun, Playa, Viajes">
+    <meta name="description" content="Agencia de viajes">
+    <meta author="Grupo #6">
+
+    <title>Viajes Ecuador</title>
+
+    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/BusquedaVuelos.css">
+    <link rel="stylesheet" href="CSS/Paquetes.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- Incluimos la barra de navegación -->
+        <div id="navbar"></div>
+
+        <div class="background-video">
+            <video autoplay muted loop>
+                <source src="Video/Home.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Formulario de búsqueda de vuelos -->
+        <div class="search-flight-box">
+            <h2>Busca tu vuelo</h2>
+            <form id="search-flight-form">
+                <div class="radio-buttons">
+                    <input type="radio" id="round-trip" name="flight-type" value="round-trip" checked>
+                    <label for="round-trip">Ida y vuelta</label>
+                    <input type="radio" id="one-way" name="flight-type" value="one-way">
+                    <label for="one-way">Solo ida</label>
+                    <input type="radio" id="multi-destination" name="flight-type" value="multi-destination">
+                    <label for="multi-destination">Multidestino</label>
+                </div>
+                <div id="flight-options"></div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="cuerpo">
+
+        <section class="bienvenida">
+            <h1><b>Bienvenidos a Viaja Ecuador</b></h1>
+            <p>Descubre los mejores destinos turisticos de Ecuador y del mundo con nosotros.</p>
+        </section>
+
+        <h2><b>PAQUETES DESTACADOS</b></h2>
+
+        <div class="paquetes">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="Img/imagen_paquete1.jpg" alt="Imagen del Paquete 1" class="package-image">
+                <img src="Img/logo_aerolinea1.png" alt="Logo Aerolínea 1" class="logo">
+                <h2>Salidas 2024: Enero - Diciembre</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="price">$1,200</p>
+                <p class="package-type">Paquete: Lujo</p>
+                <p class="duration">Duración: 7 noches</p>
+                <p class="departure">Salidas desde: Quito y Guayaquil</p>
+                <p class="destination">Destinos: París, Roma, Londres</p>
+                <p class="airline">Aerolínea: Air France</p>
+                <p class="description">Disfruta de un viaje de lujo con todo incluido a las ciudades más icónicas de
+                    Europa.</p>
+                <div class="inclusions">
+                    <i class="fas fa-plane"></i> Vuelo
+                    <i class="fas fa-hotel"></i> Alojamiento
+                    <i class="fas fa-utensils"></i> Comidas
+                    <i class="fas fa-camera"></i> Fotografía
+                    <i class="fas fa-gift"></i> Regalo
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="Img/imagen_paquete2.jpg" alt="Imagen del Paquete 2" class="package-image">
+                <img src="Img/logo_aerolinea2.png" alt="Logo Aerolínea 2" class="logo">
+                <h2>Salidas 2024: Enero - Diciembre</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="price">$950</p>
+                <p class="package-type">Paquete: Relax</p>
+                <p class="duration">Duración: 5 noches</p>
+                <p class="departure">Salidas desde: Quito y Guayaquil</p>
+                <p class="destination">Destinos: Cancún, Playa del Carmen</p>
+                <p class="airline">Aerolínea: Aeroméxico</p>
+                <p class="description">Relájate en las mejores playas del Caribe con este paquete todo incluido.</p>
+                <div class="inclusions">
+                    <i class="fas fa-plane"></i> Vuelo
+                    <i class="fas fa-hotel"></i> Alojamiento
+                    <i class="fas fa-utensils"></i> Comidas
+                    <i class="fas fa-spa"></i> Spa
+                    <i class="fas fa-gift"></i> Regalo
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="Img/imagen_paquete3.jpg" alt="Imagen del Paquete 3" class="package-image">
+                <img src="Img/logo_aerolinea3.png" alt="Logo Aerolínea 3" class="logo">
+                <h2>Salidas 2024: Enero - Diciembre</h2>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="price">$1,500</p>
+                <p class="package-type">Paquete: Aventura</p>
+                <p class="duration">Duración: 10 noches</p>
+                <p class="departure">Salidas desde: Quito y Guayaquil</p>
+                <p class="destination">Destinos: Nueva York, Las Vegas, Los Ángeles</p>
+                <p class="airline">Aerolínea: American Airlines</p>
+                <p class="description">Explora las ciudades más emocionantes de los EE. UU. con este paquete de
+                    aventura.</p>
+                <div class="inclusions">
+                    <i class="fas fa-plane"></i> Vuelo
+                    <i class="fas fa-hotel"></i> Alojamiento
+                    <i class="fas fa-car"></i> Transporte
+                    <i class="fas fa-camera"></i> Fotografía
+                    <i class="fas fa-gift"></i> Regalo
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón para ver más paquetes -->
+        <div class="view-more-button-container">
+            <a href="view/paquetes.html" class="view-more-button">Ver más paquetes</a>
+        </div>
+
+    </div>
+
+    <!-- Incluimos el footer -->
+    <div id="footer"></div>
+
+    <script src="JS/CargarComponentes.js"></script>
+    <script src="JS/BusquedaVuelos.js"></script>
+</body>
+
+</html>

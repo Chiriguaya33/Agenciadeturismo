@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los mejores destinos turísticos en Ecuador y el mundo con ViajaEcuador.">
+    <meta name="keywords" content="turismo, Ecuador, viajes, excursiones, destinos turísticos, internacionales">
+    <meta name="author" content="ViajaEcuador">
+
+    <title>ViajaEcuador - Destinos</title>
+
+    <link rel="stylesheet" href="../CSS/Destinos.css">
+    <link rel="stylesheet" href="../CSS/BusquedaVuelos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+</head>
+<body>
+
+    <div class="header">
+        <!-- Incluimos la barra de navegación -->
+        <div id="navbar"></div>
+
+        <div class="background-video">
+            <video autoplay muted loop>
+                <source src="../Video/Home.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- Formulario de búsqueda de vuelos -->
+        <div class="search-flight-box">
+            <h2>Busca tu vuelo</h2>
+            <form id="search-flight-form">
+                <div class="radio-buttons">
+                    <input type="radio" id="round-trip" name="flight-type" value="round-trip" checked>
+                    <label for="round-trip">Ida y vuelta</label>
+                    <input type="radio" id="one-way" name="flight-type" value="one-way">
+                    <label for="one-way">Solo ida</label>
+                    <input type="radio" id="multi-destination" name="flight-type" value="multi-destination">
+                    <label for="multi-destination">Multidestino</label>
+                </div>
+                <div id="flight-options"></div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="cuerpo">
+        <h2 id="destinos">Destinos Populares</h2>
+        <div class="destinos">
+            <!-- Destinos Nacionales -->
+            <div class="destino">
+                <img class="img" src="../Img/galapagos.jpg" alt="Islas Galápagos">
+                <h3>Islas Galápagos</h3>
+                <p>Las Islas Galápagos son un paraíso para los amantes de la naturaleza y la biodiversidad.</p>
+                <p class="price"><i class="fas fa-dollar-sign"></i> 1500</p>
+                <p class="duration"><i class="fas fa-clock"></i> 7 días</p>
+                <p class="weather"><i class="fas fa-sun"></i> Clima cálido</p>
+            </div>
+            <div class="destino">
+                <img class="img" src="../Img/quito.jpg" alt="Quito">
+                <h3>Quito</h3>
+                <p>La capital de Ecuador, Quito, es famosa por su bien conservado centro histórico colonial.</p>
+                <p class="price"><i class="fas fa-dollar-sign"></i> 800</p>
+                <p class="duration"><i class="fas fa-clock"></i> 4 días</p>
+                <p class="weather"><i class="fas fa-cloud"></i> Clima templado</p>
+            </div>
+            <div class="destino">
+                <img class="img" src="../Img/baños.jpeg" alt="Baños">
+                <h3>Baños de Agua Santa</h3>
+                <p>Conocida por sus aguas termales y deportes de aventura, Baños es un destino imperdible.</p>
+                <p class="price"><i class="fas fa-dollar-sign"></i> 600</p>
+                <p class="duration"><i class="fas fa-clock"></i> 3 días</p>
+                <p class="weather"><i class="fas fa-tint"></i> Clima húmedo</p>
+            </div>
+            <!-- Destinos Internacionales -->
+            <div class="destino">
+                <img class="img" src="../Img/Paris.jpeg" alt="París">
+                <h3>París, Francia</h3>
+                <p>La ciudad del amor, famosa por la Torre Eiffel, el Louvre y su exquisita gastronomía.</p>
+                <p class="price"><i class="fas fa-dollar-sign"></i> 2000</p>
+                <p class="duration"><i class="fas fa-clock"></i> 5 días</p>
+                <p class="weather"><i class="fas fa-cloud-sun"></i> Clima variable</p>
+            </div>
+            <div class="destino">
+                <img class="img" src="../Img/tokyo.jpeg" alt="Tokio">
+                <h3>Tokio, Japón</h3>
+                <p>Una metrópolis vibrante, conocida por su tecnología avanzada, cultura y deliciosa comida.</p>
+                <p class="price"><i class="fas fa-dollar-sign"></i> 2500</p>
+                <p class="duration"><i class="fas fa-clock"></i> 6 días</p>
+                <p class="weather"><i class="fas fa-sun"></i> Clima soleado</p>
+            </div>
+            <div class="destino">
+                <img class="img" src="../Img/nyc.jpeg" alt="Nueva York">
+                <h3>Nueva York, EE.UU.</h3>
+                <p>La ciudad que nunca duerme, hogar de la Estatua de la Libertad, Times Square y Broadway.</p>
+                <p class="price"><i class="fas fa-dollar-sign"></i> 1800</p>
+                <p class="duration"><i class="fas fa-clock"></i> 5 días</p>
+                <p class="weather"><i class="fas fa-cloud-rain"></i> Clima lluvioso</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluimos el footer -->
+    <div id="footer"></div>
+
+    <script src="../JS/CargarComponentes.js"></script>
+    <script src="../JS/BusquedaVuelos.js"></script>
+</body>
+</html>
